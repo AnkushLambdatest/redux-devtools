@@ -22,182 +22,182 @@ postMerge :
               - node --version 
         configFile : "./jest.config.js"
         
-      - name: redux-devtools-cli     
-        path : "./packages/redux-devtools-cli"
-        pattern: 
-          - "./test/integration.spec.ts"
+#       - name: redux-devtools-cli     
+#         path : "./packages/redux-devtools-cli"
+#         pattern: 
+#           - "./test/integration.spec.ts"
 
-        framework : jest
-        preRun:
-          command:
-            - npm run build
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm run build
 
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"
         
-      - name: map2tree     
-        path : "./packages/map2tree"
-        pattern: 
-          - "./test/*.spec.ts"
+#       - name: map2tree     
+#         path : "./packages/map2tree"
+#         pattern: 
+#           - "./test/*.spec.ts"
 
-        framework : jest
-        preRun:
-          command:
-            - npm run build
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm run build
 
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"
         
-      - name: react-dock     
-        path : "./packages/react-dock"
-        pattern: 
-          - "./test/index.test.tsx"
+#       - name: react-dock     
+#         path : "./packages/react-dock"
+#         pattern: 
+#           - "./test/index.test.tsx"
 
-        framework : jest
-        preRun:
-          command:
-            - npm i 
-            - npm run build
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm i 
+#             - npm run build
 
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"
         
-      - name: react-json-tree     
-        path : "./packages/react-json-tree"
-        pattern: 
-          - "./test/index.spec.tsx"
-          - "./test/objType.spec.ts"
+#       - name: react-json-tree     
+#         path : "./packages/react-json-tree"
+#         pattern: 
+#           - "./test/index.spec.tsx"
+#           - "./test/objType.spec.ts"
 
-        framework : jest
-        preRun:
-          command:
-            - npm i
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm i
 
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"
       
-      - name: redux-devtools-app     ## blocked  
-        path : "./packages/redux-devtools-app"
-        pattern: 
-          - "./test/app.spec.tsx"
+#       - name: redux-devtools-app     ## blocked  
+#         path : "./packages/redux-devtools-app"
+#         pattern: 
+#           - "./test/app.spec.tsx"
 
-        framework : jest
-        preRun:
-          command:
-            - npm i
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm i
 
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"  
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"  
       
         
-      - name: redux-devtools-inspector-monitor-test-tab     
-        path : "./packages/redux-devtools-inspector-monitor-test-tab"
-        pattern: 
-          - "./test/assertions.spec.ts"
-          - "./test/TestGenerator.spec.tsx"
+#       - name: redux-devtools-inspector-monitor-test-tab     
+#         path : "./packages/redux-devtools-inspector-monitor-test-tab"
+#         pattern: 
+#           - "./test/assertions.spec.ts"
+#           - "./test/TestGenerator.spec.tsx"
 
-        framework : jest
-        preRun:
-          command:
-            - npm i
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm i
 
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"
         
-      - name: redux-devtools-inspector-monitor-trace-tab    
-        path : "./packages/redux-devtools-inspector-monitor-trace-tab"
-        pattern: 
-          - "./test/StackTraceTab.spec.tsx"
+#       - name: redux-devtools-inspector-monitor-trace-tab    
+#         path : "./packages/redux-devtools-inspector-monitor-trace-tab"
+#         pattern: 
+#           - "./test/StackTraceTab.spec.tsx"
 
-        framework : jest
-        preRun:
-          command:
-            - npm i
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm i
 
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"
-        
-      
-      - name: redux-devtools-instrument   
-        path : "./packages/redux-devtools-instrument"
-        pattern: 
-          - "./test/instrument.spec.ts"
-
-        framework : jest
-        preRun:
-          command:
-            - npm i
-
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"
         
       
-      - name: redux-devtools-serialize   
-        path : "./packages/redux-devtools-serialize"
-        pattern: 
-          - "./test/helpers.spec.ts"
-          - "./test/immutable.spec.ts"
+#       - name: redux-devtools-instrument   
+#         path : "./packages/redux-devtools-instrument"
+#         pattern: 
+#           - "./test/instrument.spec.ts"
 
-        framework : jest
-        preRun:
-          command:
-            - npm i
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm i
 
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"
-        
-        
-      - name: redux-devtools-ui   
-        path : "./packages/redux-devtools-ui"
-        pattern: 
-          - "./test/*.test.*"
-
-
-        framework : jest
-        preRun:
-          command:
-            - npm i
-
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"  
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"
         
       
-      - name: redux-devtools
-        path : "./packages/redux-devtools"
-        pattern: 
-          - "./test/persistState.spec.ts"
+#       - name: redux-devtools-serialize   
+#         path : "./packages/redux-devtools-serialize"
+#         pattern: 
+#           - "./test/helpers.spec.ts"
+#           - "./test/immutable.spec.ts"
+
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm i
+
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"
+        
+        
+#       - name: redux-devtools-ui   
+#         path : "./packages/redux-devtools-ui"
+#         pattern: 
+#           - "./test/*.test.*"
 
 
-        framework : jest
-        preRun:
-          command:
-            - npm i
-            - npm run build
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm i
 
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"   
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"  
+        
+      
+#       - name: redux-devtools
+#         path : "./packages/redux-devtools"
+#         pattern: 
+#           - "./test/persistState.spec.ts"
+
+
+#         framework : jest
+#         preRun:
+#           command:
+#             - npm i
+#             - npm run build
+
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"   
       
  
         
